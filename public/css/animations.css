@@ -1,0 +1,74 @@
+    header {
+        animation: fadeIn-fromTop 1s cubic-bezier(0.33, 0.04, 0.2, 1);
+     }
+     #hamburger,
+     #quote,
+     #forms {
+        animation: fadeIn-fromBottom 1s cubic-bezier(0.33, 0.04, 0.2, 1.27);
+     }
+     #greet{
+        animation: scaleUp 1s cubic-bezier(0.33, 0.04, 0.2, 1.27);
+     }
+     article,
+     #startBtn  {
+       animation: fade 1s ease-in-out;
+     }
+     #svgMainLogo circle {
+         r:2.3741262;         
+     }
+     #svgMainLogo:hover circle {
+        animation: circleSvg 2s infinite ease;
+        fill: #fb0000;
+     }
+     @keyframes circleSvg {
+        0% { 
+            r:2.3741262;
+        }
+        25% {
+            r:0;
+        }
+        50% {           
+            r:2.3741262
+        }
+        100% {           
+            r:2.3741262
+        }
+     }
+
+     /* onload animationKeyframe */
+     @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+     }
+     @keyframes fadeIn-fromTop {
+        from {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0%)
+        }
+     }
+     @keyframes fadeIn-fromBottom {
+        from {
+            opacity: 0;
+            transform: translateY(100%) rotate(0deg);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0%) rotate(0deg);
+        }
+     }
+     @keyframes scaleUp {
+         from {
+             transform: scale(0);
+         }
+         to {
+             transform: scale(1);
+         }
+     }
