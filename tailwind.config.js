@@ -15,7 +15,7 @@ module.exports = {
         transparentColor: 'transparent',
       },
       backgroundImage: {
-        'landing' : "url('/src/img/landingIMG.JPG')"
+        'landing' : "url('../img/landingIMG.JPG')"
       },
       fontFamily: {
         'Poppins':['Poppins'],
