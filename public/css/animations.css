@@ -3,14 +3,18 @@
      }
      #hamburger,
      #quote,
-     #forms {
+     #forms,
+     #aboutName,
+     #aboutDesc {
         animation: fadeIn-fromBottom 1s cubic-bezier(0.33, 0.04, 0.2, 1.27);
      }
-     #greet{
+     #greet,
+     #myImg {
         animation: scaleUp 1s cubic-bezier(0.33, 0.04, 0.2, 1.27);
      }
      article,
-     #startBtn  {
+     #startBtn,
+     #credits  {
        animation: fade 1s ease-in-out;
      }
      #svgMainLogo circle {

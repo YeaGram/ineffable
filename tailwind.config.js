@@ -19,7 +19,8 @@ module.exports = {
       },
       fontFamily: {
         'Poppins':['Poppins'],
-        'Pacifico': ['Pacifico']
+        'Pacifico': ['Pacifico'],
+        'Montserrat': ['Montserrat']
       },
       dropShadow: {
         'outlineDrop' : [
