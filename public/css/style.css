@@ -589,12 +589,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 100%;
 }
 
-.left-1\/2 {
-  left: 50%;
-}
-
 .top-1\/2 {
   top: 50%;
+}
+
+.left-1\/2 {
+  left: 50%;
 }
 
 .isolate {
@@ -607,10 +607,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .z-50 {
   z-index: 50;
-}
-
-.z-40 {
-  z-index: 40;
 }
 
 .z-10 {
@@ -690,6 +686,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-mt-10 {
   margin-top: -2.5rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mb-3 {
@@ -792,10 +792,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .h-screen {
   height: 100vh;
 }
@@ -824,6 +820,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
@@ -842,10 +842,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-2\/3 {
   width: 66.666667%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .max-w-xs {
@@ -920,16 +916,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-1\/2 {
-  --tw-translate-x: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-1\/2 {
-  --tw-translate-y: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1853,10 +1839,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url("..."),url("...");
 }
 
-.bg-landing {
-  background-image: url('../img/landingIMG.JPG');
-}
-
 .from-orange-200 {
   --tw-gradient-from: #fed7aa;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(254 215 170 / 0));
@@ -1891,18 +1873,6 @@ Ensure the default browser behavior of the `hidden` attribute.
           box-decoration-break: clone;
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-contain {
-  background-size: contain;
-}
-
-.bg-auto {
-  background-size: auto;
-}
-
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -1930,10 +1900,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-repeat {
@@ -2149,6 +2115,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-xs {
@@ -2714,6 +2685,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.imgGroup {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 247 237 / var(--tw-bg-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
+}
+
+.imgGroup:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.imgGroup img {
+  width: 100%;
+  max-width: 100%;
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -2722,6 +2719,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .before\:right-0::before {
   content: var(--tw-content);
   right: 0px;
+}
+
+.before\:top-1\/2::before {
+  content: var(--tw-content);
+  top: 50%;
+}
+
+.before\:left-1\/2::before {
+  content: var(--tw-content);
+  left: 50%;
 }
 
 .before\:top-0::before {
@@ -2744,24 +2751,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 100%;
 }
 
-.before\:top-1\/2::before {
-  content: var(--tw-content);
-  top: 50%;
-}
-
-.before\:left-1\/2::before {
-  content: var(--tw-content);
-  left: 50%;
-}
-
 .before\:-z-20::before {
   content: var(--tw-content);
   z-index: -20;
-}
-
-.before\:-z-10::before {
-  content: var(--tw-content);
-  z-index: -10;
 }
 
 .before\:-z-50::before {
@@ -2790,19 +2782,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
-.before\:h-\[3px\]::before {
-  content: var(--tw-content);
-  height: 3px;
-}
-
 .before\:h-\[100vh\]::before {
   content: var(--tw-content);
   height: 100vh;
 }
 
-.before\:h-\[100vw\]::before {
+.before\:h-\[3px\]::before {
   content: var(--tw-content);
-  height: 100vw;
+  height: 3px;
 }
 
 .before\:w-\[75vw\]::before {
@@ -2823,11 +2810,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .before\:w-\[100vw\]::before {
   content: var(--tw-content);
   width: 100vw;
-}
-
-.before\:w-full::before {
-  content: var(--tw-content);
-  width: 100%;
 }
 
 .before\:-translate-x-1\/2::before {
@@ -3051,6 +3033,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:max-w-none {
     max-width: none;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
   }
 
   .sm\:justify-around {
