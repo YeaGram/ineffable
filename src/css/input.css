@@ -23,7 +23,7 @@
 }
 
 .imgGroup {
-    @apply w-[80%] mx-auto bg-orange-50 my-4 transition duration-1000 hover:transform hover:scale-105
+    @apply w-[80%] sm:mx-2 sm:w-[500px] bg-orange-50 my-4 transition duration-1000 hover:transform hover:scale-105
 }
 .imgGroup img {
     @apply w-full max-w-full

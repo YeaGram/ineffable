@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Water+Brush&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/others.css">
     <title>Gallery</title>
 </head>
 <body class="relative bg-orange-100">
@@ -16,7 +17,7 @@
            <div id="svgMainLogo" class=" flex justify-center items-center p-2 fill-orange-500 hover:fill-orange-600 transition duration-300
            transform hover:scale-105 ">
               <!-- LogoSvg -->
-                 <svg class="m-1 w-[4rem] animate-colors"
+                 <svg class="m-1 w-[4rem] animate-colors logoSVG"
                     viewBox="0 0 73.626544 55.955929"
                     version="1.1"
                     id="svg5"
@@ -169,13 +170,23 @@
    </nav>
 
    <!-- GalleryStartHere --> 
-   <div class="mt-24">
+   <div class="mt-24 ">
       <h2 class="font-Montserrat text-3xl font-bold text-center">Gallery</h2>
       <p class="font-Poppins text-center text-xs">Gambar dikit :v, masih beta👌</p>
    </div>
-   <div class="container">
-      <div class="flex flex-col items-center">
-         <div class="imgGroup">
+   <div class="container mx-auto">
+      <div class="mx-auto flex flex-col items-center justify-center sm:flex-row sm:flex-wrap">
+
+         <!-- memasukkanGambar Via PHP -->
+         <?php
+            $jmlFoto = 39;
+            for($i=1;$i <= $jmlFoto;$i++) : ?>           
+            <div class="imgGroup">
+               <?php echo "<img src='./img/gallery/". $i.".jpg'>" ?>
+            </div>
+         <?php endfor; ?>
+         
+         <!-- <div class="imgGroup">
             <img src="./img/gallery/1.jpg" alt="">
          </div>
          <div class="imgGroup">
@@ -205,9 +216,107 @@
          <div class="imgGroup">
             <img src="./img/gallery/10.jpg" alt="">
          </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/11.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/12.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/13.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/14.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/15.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/16.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/17.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/18.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/19.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/20.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/21.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/22.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/23.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/24.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/25.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/26.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/27.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/28.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/29.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/30.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/31.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/32.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/33.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/34.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/35.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/36.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/37.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/38.jpg" alt="">
+         </div>
+         <div class="imgGroup">
+            <img src="./img/gallery/39.jpg" alt="">
+         </div> -->
       </div>
    </div>
-
+   <!-- footer -->
+   <footer class="mb-10 mt-5">
+      <form action="" class="w-[80vw] mx-auto bg-orange-100 border-dashed border-2 border-orange-300">
+         <div class="p-10 flex justify-center items-center flex-col">            
+            <label for="imgAdd" class="text-center hover:text-orange-400 cursor-pointer text-2xl font-bold font-Pacifico mb-3">Upload Picture?</label>
+            <input type="file" id="imgAdd" name="imgAdd" src="" alt="" accept=".jpg, .jpeg, .png" value="add" class=" block
+               file:rounded-full file:border-0 file:px-4 file:py-2 file:bg-orange-200 file:font-semibold file:font-Poppins
+               text-sm
+            ">
+         </div>
+      </form>
+   </footer>
 
     <script src="../src/js/script.js"></script>
 </body>

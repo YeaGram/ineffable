@@ -1,11 +1,15 @@
 module.exports = {
-  content: ['./**/*.{html,js}'],
+  content: ['./**/*.{html,js,php}'],
   theme: {
     extend: {
       keyframes: {
        colorAnimated: {
           '0%, 100%': {     fill: '#f97316'},
           '50%': {fill : '#fb923c'},
+        },
+        pop3DRotate: {
+          '0%, 100%' : {  transform: "rotate(0deg)"   },
+          '50%' : {  transform: "rotate(360deg)"    }
         }
       },
       animation: {

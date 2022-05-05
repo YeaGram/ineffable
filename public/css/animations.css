@@ -1,4 +1,4 @@
-    header {
+     header {
         animation: fadeIn-fromTop 1s cubic-bezier(0.33, 0.04, 0.2, 1);
      }
      #hamburger,
@@ -24,7 +24,7 @@
      #svgMainLogo:hover circle {
         animation: circleSvg 2s infinite ease;
         fill: #fb0000;
-     }
+     } 
      @keyframes circleSvg {
         0% { 
             r:2.3741262;
@@ -77,3 +77,4 @@
              transform: scale(1);
          }
      }
+   
