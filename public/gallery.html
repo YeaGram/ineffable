@@ -186,7 +186,15 @@
             </div>
          <?php endfor; ?>
           -->
-         <div class="imgGroup">
+          <!-- i think this is bad :V -->
+          <script>
+             let jmlFoto = 39;
+             for (let i = 1; i <= jmlFoto; i++) {
+                document.write("<div class='imgGroup'><img src='./img/gallery/" + i + ".jpg' alt=''></div>")
+             }
+          </script>
+
+         <!-- <div class="imgGroup">
             <img src="./img/gallery/1.jpg" alt="">
          </div>
          <div class="imgGroup">
@@ -302,7 +310,7 @@
          </div>
          <div class="imgGroup">
             <img src="./img/gallery/39.jpg" alt="">
-         </div>
+         </div> -->
       </div>
    </div>
    <!-- footer -->

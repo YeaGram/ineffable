@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./**/*.{html,js,php}'],
+  content: ['./**/*.{html,js}'],
   theme: {
     extend: {
       keyframes: {
@@ -16,7 +16,7 @@ module.exports = {
        colorAnimated: 'colorAnimated 3s ease-in-out infinite',
       },
       colors: {
-        transparentColor: 'transparent',
+        transparentColor: 'transparent'
       },
       backgroundImage: {
         'landing' : "url('../img/landingIMG.JPG')"

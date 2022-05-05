@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .hamburger-line {
-    @apply w-[30px] h-[2px] bg-white block my-2;
+    @apply w-[30px] h-[2px] bg-white block my-1.5;
 }
 .hamburger-active > *{
     @apply translate-x-1;
